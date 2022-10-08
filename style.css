@@ -1,21 +1,32 @@
- body {
-    background-color: antiquewhite;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.box {
+  color: white;
+  text-align: center;  
+  /* min-height: 100vh;         */
 }
-h1 {
-  color: #4a3a42;
-    text-align: center;
-    font-size: 200%
+
+.topSection {background-color:#01BD9E}
+.aboutMe {background-color: #2B96DE;}
+.skills {background-color: #9B54B9;}
+.contact {background-color: #32485E;}
+.projects {background-color: #F3C402;}
+.footer {background-color: #E87D02;}
+/* This ABOVE is just styling and sizing of the boxes so we can see it move 
+around.You know what I mean. 
+
+This BELOW is where I will give the property FLEX to the entire container.*/
+.container {
+display: flex;
+/* border: 10px solid goldenrod; */
+/* height: 100vh; */
+flex-direction: column;
+/* flex-wrap: wrap; */
 }
-h2 {
-  text-align: center;
-}
-h3 {
-    text-align: center;
-    color: #4a3a42;
-}
+
+
+
+
 .magicButton {
   height: 50px;
   width: 150px;
@@ -28,40 +39,5 @@ h3 {
   position: relative;
   display: inline-block;
 }
-.magicButton:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-} 
-.mainMenu {
-  position: relative;
-  display: inline-block;
-}
-p {
-  text-align: center;
-  
-  
-}
-skills {
-background-color: FCA310;
-text-align: center;
-}
-ul {
-  background: #3399ff;
-  padding: 20px;
-  list-style-type: none;
-}
-  ul li {
-    background: #cce5ff;
-    color: darkblue;
-    margin: 5px;
-  }
-  projects {
-    background-color: rgb(225, 15, 15);
-    color: white;
-  }
-footer {
-  margin-top: auto;
-  text-align: center;
-  justify-content: center;
-}
+
+
